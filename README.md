@@ -30,8 +30,6 @@
 > 4. 添加代理后仍无法下载问题：<br>
 >    配置或删除 `C:\Users\***\.gradle\gradle.properties` 中的全局代理<br> ~~`systemProp.http.proxyHost=...`~~<br> ~~`systemProp.http.proxyPort=...`~~<br> ~~`systemProp.https.proxyHost=...`~~<br> ~~`systemProp.https.proxyPort=...`~~<br>
 
-<kbd>Win</kbd>+<kbd>Prtsc</kbd> 快速截图
-
 <br>
 <br>
 
