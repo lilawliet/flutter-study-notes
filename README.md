@@ -38,7 +38,7 @@ FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</code></li>
 
 ## FQA:
 
-### [1. Q: 如何搭建自己的稳定代理？](@Q1)
+### <p id="Q1">1. Q: 如何搭建自己的稳定代理？</p>
 
 <font ><em>简述：</em></font><br>
 <font ><em>1. 购买一台香港/台湾或国外服务器</em></font><br>
@@ -51,7 +51,7 @@ FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</code></li>
 
 <font ><em>2. 服务器安装 shadowsocks</em></font><br>
 
-> \# 1. 服务器安装 wget<br><code>yum install wget</code><br> \# 2. 安装 shadowsocks <br><code>wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh</code><br> \# 3. 获取 shadowsocks.sh 读取权限 <br> > <code>chmod +x shadowsocks.sh</code><br> \# 4. 设置密码和端口号及加密方式<font color=#aaa>（加密方式使用默认即可）</font><br> <code>./shadowsocks.sh 2>&1 | tee shadowsocks.log</code><br> \# 5. 安装完成后会显示 IP 地址&端口号&密码&加密方式，做好记录后，<font color=yellow><b>重启系统</b></font>！
+> \# 1. 服务器安装 wget<br><code>yum install wget</code><br> \# 2. 安装 shadowsocks <br>`wget –no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh`<br> \# 3. 获取 shadowsocks.sh 读取权限 <br> > <code>chmod +x shadowsocks.sh</code><br> \# 4. 设置密码和端口号及加密方式<font color=#aaa>（加密方式使用默认即可）</font><br> <code>./shadowsocks.sh 2>&1 | tee shadowsocks.log</code><br> \# 5. 安装完成后会显示 IP 地址&端口号&密码&加密方式，做好记录后，<font color=yellow><b>重启系统</b></font>！
 
 <font><em>3. 安装客户端工具</em></font>
 
