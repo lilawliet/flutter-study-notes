@@ -1,7 +1,8 @@
-# Flutter Study Notes (Flutter 学习笔记)
+# Flutter Study Notes (Flutter 学习助手)
 
 > 此文档内容为：<br>
-> 使用 Windows 系统开发 Android 应用流程（的学习笔记）<br>
+> 使用 Windows 系统开发 Android 应用流程（的学习助手）<br>
+> 主要提供了本人在学习开发中遇到的问题及解决方案<br>
 > 主要学习途径： [Flutter 中文网](https://flutterchina.club/)
 
 <br>
@@ -16,18 +17,18 @@
 
 ---
 
-## 1. 起步
+## 1. 安装
 
-> 想要直接参考官方中文文档 [<u>看这里</u>](https://doc.flutterchina.club/setup-windows/)
+参考[<u>官方中文文档</u>](https://doc.flutterchina.club/setup-windows/)，不赘述。
 
-<ol>
-<li>官方为中国开发者提供了两个镜像地址:<font color=yellow>（有稳定VPN可跳过该步骤）</font><br>
-<em><font color=#aaa>// 在系统环境变量中添加以下两个变量</font></em><br>
-<em><font color=#aaa>// 因为开发过程中还是需要访问 google，所以作用不大</font></em><br>
-<code>PUB_HOSTED_URL=https://pub.flutter-io.cn<br>
-FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn</code></li>
-<li>科学上网，搭建个人VPN</li>
-</ol>
+> 说说可能遇到的问题：<br>
+>
+> 1. 检查 Android SDK 环境变量路径是否正确
+> 2. Android SDK missing command line tools:
+>    > Android Studio - Tools - SDK Manager - SDK Tools - (选择安装) Android SDK command-line Tools
+> 3. 无法下载 gradle 问题， 设置 proxy: File - Settings - HTTP Proxy 添加本地代理
+> 4. 添加代理后仍无法下载问题：<br>
+>    配置或删除 `C:\Users\***\.gradle\gradle.properties` 中的全局代理<br> ~~`systemProp.http.proxyHost=...`~~<br> ~~`systemProp.http.proxyPort=...`~~<br> ~~`systemProp.https.proxyHost=...`~~<br> ~~`systemProp.https.proxyPort=...`~~<br>
 
 <kbd>Win</kbd>+<kbd>Prtsc</kbd> 快速截图
 
