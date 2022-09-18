@@ -7,9 +7,6 @@
 > 开发过程很多资源需要访问外网，所以<b>需要一个稳定的代理</b>！！！<br>如果没有稳定代理可以看这里: [(Q: 如何搭建自己的稳定代理？)](#Q1)
 
 <br>
-
----
-
 <br>
 
 ---
@@ -40,11 +37,12 @@
 > 3. english_words: ~~^3.1.0~~ 换成 ^4.0.0 <br>
 >    使用 v3.1.0 版本报错，在 [pub.dartlang.org](https://pub.dev/) 上搜索 [english_words](https://pub.dev/packages/english_words) 看到 4.0.0 版本开始是 <kbd>Null safety</kbd> 的版本。<br><font color=#aaa>Flutter2.2.0（2021 年 5 月 19 日发布） 之后的版本都要求使用 <kbd>Null safety</kbd>。</font> [> 了解什么是 Null safety](https://dart.cn/null-safety)
 
+<br>
+<br>
+
 ---
 
-## FQA:
-
-### <p id="Q1">1. Q: 如何搭建自己的稳定代理？</p>
+## <p id="Q1">Q: 如何搭建自己的稳定代理？</p>
 
 <font ><em>简述：</em></font><br>
 <font ><em>1. 购买一台香港/台湾或国外服务器</em></font><br>
