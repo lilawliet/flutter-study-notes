@@ -1,17 +1,14 @@
 # Flutter Study Notes (Flutter 学习助手)
 
-> 此文档内容为：<br>
-> 使用 Windows 系统开发 Android 应用流程（的学习助手）<br>
-> 主要提供了本人在学习开发中遇到的问题及解决方案<br>
-> 主要学习途径： [Flutter 中文网](https://flutterchina.club/)
+## 写在前面
+
+> 此文档内容为：<br><b>在 Windows 系统中使用 Android Studio 进行 Android 应用开发流程</b><br>的学习助手文档<br> 整合了本人在学习开发中遇到的 <b>问题及解决方案</b>，也许对你有所帮助<br>
+> 主要学习途径： [Flutter 中文网](https://flutterchina.club/)<br>
+> 开发过程很多资源需要访问外网，所以<b>需要一个稳定的代理</b>！！！<br>如果没有稳定代理可以看这里: [(Q: 如何搭建自己的稳定代理？)](#Q1)
 
 <br>
 
 ---
-
-## 写在前面
-
-开发过程很多资源需要访问外网，所以需要一个稳定的代理！！！<br>如果没有稳定代理可以看这里: [(Q: 如何搭建自己的稳定代理？)](#Q1)，真滴可谓是保姆级别教程了
 
 <br>
 
@@ -23,15 +20,25 @@
 
 > 说说可能遇到的问题：<br>
 >
-> 1. 检查 Android SDK 环境变量路径是否正确
+> 1. 检查 Android SDK 环境变量路径是否正确<b>（Android SDK 需要占用大量空间，建议不要装在默认的 C 盘中）</b>
 > 2. Android SDK missing command line tools:
 >    > Android Studio - Tools - SDK Manager - SDK Tools - (选择安装) Android SDK command-line Tools
-> 3. 无法下载 gradle 问题， 设置 proxy: File - Settings - HTTP Proxy 添加本地代理
+> 3. 无法下载 gradle 问题， 设置 proxy: File - Settings - HTTP Proxy <b>添加本地代理</b>
 > 4. 添加代理后仍无法下载问题：<br>
 >    配置或删除 `C:\Users\***\.gradle\gradle.properties` 中的全局代理<br> ~~`systemProp.http.proxyHost=...`~~<br> ~~`systemProp.http.proxyPort=...`~~<br> ~~`systemProp.https.proxyHost=...`~~<br> ~~`systemProp.https.proxyPort=...`~~<br>
 
 <br>
 <br>
+
+---
+
+## 1. 编写第一个 Flutter 应用
+
+> 1. 为方便开发，先把保存自动格式化勾选上
+>    ![](assets/save.png)
+> 2. 这里的语法应该还是 dart1 的语法？实际编写过程中插件会警告或报错，关键字 <kbd>new</kbd> 可以省略，常量上下文使用 <kbd>const</kbd> 修饰。具体看这里：[> 高效 Dart 语言指南：用法示例](https://dart.cn/guides/language/effective-dart/usage#dont-use-new) ![](assets/f1.png)<br>
+> 3. english_words: ~~^3.1.0~~ 换成 ^4.0.0 <br>
+>    使用 v3.1.0 版本报错，在 [pub.dartlang.org](https://pub.dev/) 上搜索 [english_words](https://pub.dev/packages/english_words) 看到 4.0.0 版本开始是 <kbd>Null safety</kbd> 的版本。<br><font color=#aaa>Flutter2.2.0（2021 年 5 月 19 日发布） 之后的版本都要求使用 <kbd>Null safety</kbd>。</font> [> 了解什么是 Null safety](https://dart.cn/null-safety)
 
 ---
 
