@@ -2,8 +2,8 @@
 
 ## 写在前面
 
-> 此文档内容为：<br><b>在 Windows 系统中使用 Android Studio 进行 Android 应用开发流程</b><br>的学习助手文档<br> 整合了本人在学习开发中遇到的 <b>问题及解决方案</b>，也许对你有所帮助<br>
-> 主要学习途径： [Flutter 中文网](https://flutterchina.club/)<br>
+> 此文档内容为：<br><b>在 Windows 系统中使用 Android Studio 进行 Android 应用开发流程</b><br>的学习助手文档。<br> 整合了本人在学习开发中遇到的<b>问题及解决方案</b>，也许初学者会遇到同样的问题在这里可以找到解答。<br>
+> 学习途径： <br> > [flutter.cn (官方中文网) [荐]](https://flutter.cn/docs/get-started/install)<br> > [flutterchina.club (社区)](https://flutterchina.club/)<br>
 > 开发过程很多资源需要访问外网，所以<b>需要一个稳定的代理</b>！！！<br>如果没有稳定代理可以看这里: [(Q: 如何搭建自己的稳定代理？)](#Q1)
 
 <br>
@@ -13,9 +13,9 @@
 
 ## 1. 安装
 
-参考[<u>官方中文文档</u>](https://doc.flutterchina.club/setup-windows/)，不赘述。
+参考[<u>官方中文文档</u>](https://flutter.cn/docs/get-started/install/windows)，不赘述。
 
-> 说说可能遇到的问题：<br>
+> 说说我遇到的问题：<br>
 >
 > 1. 检查 Android SDK 环境变量路径是否正确<b>（Android SDK 需要占用大量空间，建议不要装在默认的 C 盘中）</b>
 > 2. Android SDK missing command line tools:
@@ -31,11 +31,28 @@
 
 ## 1. 编写第一个 Flutter 应用
 
+[教程链接（社区）](https://doc.flutterchina.club/get-started/codelab/)<br>
+[教程链接（官方）[荐]](https://flutter.cn/docs/get-started/codelab)
+
 > 1. 为方便开发，先把保存自动格式化勾选上
->    ![](assets/save.png)
-> 2. 这里的语法应该还是 dart1 的语法？实际编写过程中插件会警告或报错，关键字 <kbd>new</kbd> 可以省略，常量上下文使用 <kbd>const</kbd> 修饰。具体看这里：[> 高效 Dart 语言指南：用法示例](https://dart.cn/guides/language/effective-dart/usage#dont-use-new) ![](assets/f1.png)<br>
-> 3. english_words: ~~^3.1.0~~ 换成 ^4.0.0 <br>
+>    ![](assets/format.png)
+> 2. （社区教程）这里的语法应该还是 dart1 的语法？实际编写过程中插件会警告或报错，关键字 <kbd>new</kbd> 可以省略，常量上下文使用 <kbd>const</kbd> 修饰。具体看这里：[> 高效 Dart 语言指南：用法示例](https://dart.cn/guides/language/effective-dart/usage#dont-use-new) ![](assets/f1.png)<br> 3.（社区教程）english_words: ~~^3.1.0~~ 换成 ^4.0.0 <br>
 >    使用 v3.1.0 版本报错，在 [pub.dartlang.org](https://pub.dev/) 上搜索 [english_words](https://pub.dev/packages/english_words) 看到 4.0.0 版本开始是 <kbd>Null safety</kbd> 的版本。<br><font color=#aaa>Flutter2.2.0（2021 年 5 月 19 日发布） 之后的版本都要求使用 <kbd>Null safety</kbd>。</font> [> 了解什么是 Null safety](https://dart.cn/null-safety)
+
+<br>
+<br>
+
+---
+
+## 2. 构建布局
+
+[教程链接](https://doc.flutterchina.club/tutorials/layout/)<br>
+[代码](lib/layout.dart)
+
+> 1. （社区教程）Setp 6 body 整合写在哪里？<br> <font color=#aaa>因为官方文档在整合这里一笔带过，对初学者不太友好，这里对 body 代码整合位置稍作提示</font> ![](assets/body.png)
+> 2. （社区教程）Images 资源路径问题<br> 1.目录结构<br> ![](assets/folder.png)<br> 2.在 pubspec.yaml 文件中声明<br> <b>\* 注意这里去掉注释后 <kbd> assets<kbd> 前面还有一个空格要去掉，与上对齐，否则报错。</b> ![](<assets/error63(debug).png>)
+> 3. （社区教程）Error: Entrypoint doesn't contain a main function
+>    (缺少 main 方法)<br> `void main() => runApp(MyApp()); `
 
 <br>
 <br>
